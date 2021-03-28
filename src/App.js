@@ -10,6 +10,7 @@ import Row from './components/Row';
 import requests from './requests';
 import Banner from './components/Banner';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,7 +18,6 @@ function App() {
 
      <Nav/>
      <Banner/>
-
       <Row title= "Netflix Original" fetchUrl= {requests.fetchNetfllixOriginals}
       isLargeRow />
       <Row title= "Trending Now" fetchUrl = {requests.fetchTrending}/>
@@ -27,6 +27,7 @@ function App() {
       <Row title= "Romantic Movies" fetchUrl = {requests.fetchRomanceMovies}/>
       <Row title= "Documentaries" fetchUrl = {requests.fetchDocumentaries}/>
       <Row title= "Comedy Movies" fetchUrl = {requests.fetchComedyMovies}/>
+      <Footer/>
     </div>
   );
 }
