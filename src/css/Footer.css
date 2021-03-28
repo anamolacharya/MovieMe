@@ -1,0 +1,44 @@
+.main-footer {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.icon-row {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.icon {
+    height: 2.5vw;
+    width: 2.5vw;
+    padding: 1vw .2vw 1vw .2vw;
+}
+
+.icon-button {
+    background-color: rgb(25, 25, 25);;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+h4 {
+    display: block;
+}
