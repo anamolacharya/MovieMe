@@ -14,7 +14,7 @@ function Home() {
     return (
     <div>
     <Banner/>
-    <Row title= "Netflix Original" fetchUrl= {requests.fetchNetfllixOriginals}
+    <Row title= "Popular Shows"  fetchUrl= {requests.fetchNetfllixOriginals}
     isLargeRow />
     <Row title= "Trending Now" fetchUrl = {requests.fetchTrending}/>
     <Row title= "Top Rated" fetchUrl = {requests.fetchTopRated}/>
