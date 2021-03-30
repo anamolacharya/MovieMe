@@ -11,11 +11,20 @@
   transition-timing-function: ease-in;
   transition: all 0.5;
 }
+.navbar-dark{
+  background:black;
+}
 
 .nav_black {
   background-color: #111;
 }
-
+.btn-outline-success {
+  
+}
+.form-control{
+  width:400px  !important;
+  position:center !important;
+}
 .nav_logo {
   width: 120px;
   position: fixed;
@@ -35,7 +44,7 @@
 
 .nav-link{
   position:relative;
-  left:1050px;
+  left:900px;
  
 }
 .form-inline{

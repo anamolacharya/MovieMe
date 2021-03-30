@@ -24,11 +24,8 @@ function Footer(){
             </div>
             <div className="contact-info">
                 <h4>Office</h4>
-                <h4>Movie Me Enterprise | 214-244-2450 1532 | Oak street, Chicago, IL 25607</h4>
-            </div>
-            <div className="copyright">
-            <span dangerouslySetInnerHTML={{ "__html": "&copy;" }} />
-            <h4 style={{display: "inline-block"}}>2021. All Rights Reserved | Movie Me by Group 13</h4>
+                <h4>Movie Me Enterprise | 214-244-2450 1532 | Lubbock , Texas</h4>
+                <h4 >2021. All Rights Reserved | Movie Me by Group 13</h4>
             </div>
         </div>
     );

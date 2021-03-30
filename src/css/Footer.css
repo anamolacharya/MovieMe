@@ -33,11 +33,9 @@
 }
 
 .copyright {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
+    
+    position:absolute;
+    bottom:0px;
 }
 h4 {
     display: block;

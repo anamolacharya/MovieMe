@@ -12,14 +12,15 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import "../css/SignUp.css";
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography className="copyright" variant="body2" color="textSecondary" align="bottom">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
+        MovieMe
+      </Link>{ '  '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
@@ -52,7 +53,7 @@ export default function SignUp() {
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
-      <div className={classes.paper}>
+      <div className="back">
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
