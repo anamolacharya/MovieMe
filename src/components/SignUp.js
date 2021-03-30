@@ -16,11 +16,11 @@ import "../css/SignUp.css";
 
 function Copyright() {
   return (
-    <Typography className="copyright" variant="body2" color="textSecondary" align="bottom">
+    <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        MovieMe
-      </Link>{ '  '}
+        Movie Me
+      </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
@@ -51,9 +51,10 @@ export default function SignUp() {
   const classes = useStyles();
 
   return (
+    <div className="back">
     <Container component="main" maxWidth="xs">
       <CssBaseline />
-      <div className="back">
+      <div className={classes.paper}>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
@@ -137,5 +138,6 @@ export default function SignUp() {
         <Copyright />
       </Box>
     </Container>
+    </div>
   );
 }

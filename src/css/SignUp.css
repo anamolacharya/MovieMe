@@ -1,12 +1,19 @@
 .back{
-    background-color:whitesmoke;
-    position:absolute;
-    top:80px;
-    right:500px;
-    width:500px;
+    background:white !important;
+    
+   
+   
 }
 .copyright{
     position:absolute;
     bottom:20px;
     right:20px;
+}
+.bg{
+    height:730px;
+    width:100%;
+    margin-bottom: 0;
+}
+.forum{
+    color: black  !important;
 }
