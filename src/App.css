@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* This will dissapper the imaginary margin that is in the window */
 * {
   margin: 0;
@@ -6,3 +7,13 @@
 .app {
   background-color: #111;
 }
+=======
+/* This will dissapper the imaginary margin that is in the window */
+* {
+  margin: 0;
+}
+
+.app {
+  background-color: #111;
+}
+>>>>>>> Updated files

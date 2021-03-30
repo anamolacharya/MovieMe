@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .back{
     background:white !important;
     
@@ -16,4 +17,24 @@
 }
 .forum{
     color: black  !important;
+=======
+.back{
+    background:white !important;
+    
+   
+   
+}
+.copyright{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+}
+.bg{
+    height:730px;
+    width:100%;
+    margin-bottom: 0;
+}
+.forum{
+    color: black  !important;
+>>>>>>> Updated files
 }
