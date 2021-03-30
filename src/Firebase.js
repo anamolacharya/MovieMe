@@ -17,4 +17,7 @@ git stash
 git clean -d -f
 then try git pull origin master
 
+Git Push from one branch to another branch
+$ git push origin master:Anamol
+
 */
