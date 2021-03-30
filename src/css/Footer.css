@@ -5,16 +5,16 @@
     padding-bottom: 50px;
 }
 
-.icon-row {
+.icon-rows {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
     justify-content: center;
 }
 
-.icon {
-    height: 2.5vw;
-    width: 2.5vw;
+.icons {
+    height: 80px;
+    width: 80px;
     padding: 1vw .2vw 1vw .2vw;
 }
 

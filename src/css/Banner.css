@@ -47,7 +47,7 @@
 }
 /* This gives the fade in the bottom of the banner */
 .banner_fadeBottom {
-  height: 7.4rem;
+  height: -100px;
   background-image: linear-gradient(
     180deg,
     transparent,

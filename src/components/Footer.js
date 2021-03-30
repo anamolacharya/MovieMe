@@ -15,10 +15,10 @@ function Footer(){
 
     return (
         <div className="main-footer">
-            <div className="icon-row">
+            <div className="icon-rows">
                 {icons.map((icon) => 
                     <button className="icon-button">
-                        <img src = {icon} alt=""className="icon"/>
+                        <img src = {icon} alt=""className="icons"/>
                     </button>
                 )}
             </div>

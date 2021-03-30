@@ -32,3 +32,14 @@
   width: 30px;
   object-fit: contain;
 }
+
+.nav-link{
+  position:relative;
+  left:1050px;
+ 
+}
+.form-inline{
+  position:absolute;
+  left:500px;
+  
+}
