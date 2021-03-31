@@ -1,13 +1,18 @@
 import React from "react";
 import Footer from "./Footer";
+import "../css/Footer.css";
 
 function AboutUs() {
   return (
-    <div className="background_image">
+    <div>
       <img
+        className="background_image"
         src="https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
         alt="bg-image"
       />
+      <div>
+        <h1 className="about-us-header">MOVIE ME!</h1>
+      </div>
       <div className="about-us">
         <p>
           Our application MovieMe is a movie/ TV show search engine where users
@@ -33,7 +38,6 @@ function AboutUs() {
           for them and reduce a lot of time searching for movies.
         </p>
         <p>
-          {" "}
           In terms of user experience, our application would also display a list
           of similar tv shows and additional recommendations to the user.Viewers
           would also be able to view IMDB , Rotten Tomatoes ratings of the movie
