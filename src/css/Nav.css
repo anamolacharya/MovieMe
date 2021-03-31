@@ -11,19 +11,18 @@
   transition-timing-function: ease-in;
   transition: all 0.5;
 }
-.navbar-dark{
-  background:black;
+.navbar-dark {
+  background: black;
 }
 
 .nav_black {
   background-color: #111;
 }
 .btn-outline-success {
-  
 }
-.form-control{
-  width:400px  !important;
-  position:center !important;
+.form-control {
+  width: 400px !important;
+  position: center !important;
 }
 .nav_logo {
   width: 120px;
@@ -42,13 +41,15 @@
   object-fit: contain;
 }
 
-.nav-link{
-  position:relative;
-  left:900px;
- 
+.nav-link {
+  position: relative;
+  right: -1000px;
 }
-.form-inline{
-  position:absolute;
-  left:500px;
-  
+.form-inline {
+  position: absolute;
+  left: 500px;
+}
+.select-region {
+  position: absolute;
+  left: 340px;
 }
