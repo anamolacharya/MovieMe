@@ -34,12 +34,12 @@ function NavBar() {
             </Link>
           </li>
           <li class="nav-item">
-            <Link className="nav-link" to="/signin">
+            <Link className="nav-link" to="/api/signin">
               Sign In
             </Link>
           </li>
           <li class="nav-item">
-            <Link className="nav-link" to="/signup">
+            <Link className="nav-link" to="/api/signup">
               Sign Up
             </Link>
           </li>
