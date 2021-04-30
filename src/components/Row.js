@@ -4,6 +4,13 @@ import requests from '../requests';
 import "../css/Row.css";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
+import MoviePage from "../pages/MoviePagePage";
+import {
+    BrowserRouter as Router,
+    Link,
+    Route,
+    useParams
+} from 'react-router-dom'
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -37,6 +44,9 @@ function Row({title, fetchUrl, isLargeRow}) {
     const handleClick = (movie) => {
         //This will check if the trailer playing or not. 
         //If it is playeing it will set trailerUrl empty string
+        
+        <Link className="nav-link" to="/moviepage">
+        </Link>
         if (trailerUrl) {
             setTrailerUrl("");
         }else{
@@ -55,15 +65,14 @@ function Row({title, fetchUrl, isLargeRow}) {
            <h2>{title}</h2>
             <div className= "row_posters">
                 {/* Row POsters*/}
-
             {movies.map(movie =>(
             <img 
             key={movie.id} //Any changes in row, it will just re render in the row.
-            onClick={ () => handleClick(movie)} //this will refer to the movie when a movie in the display is clicked
+            //onClick={ () => handleClick(movie)} //this will refer to the movie when a movie in the display is clicked
+            onClick={event =>  window.location.href=`/moviepage/${movie.id}`}
             className ={`row_poster ${isLargeRow && "row_posterLarge"}`} //all of them are row_poster, except the row with large row.
             src = {`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} alt = {movie.name}/>
             ))}
-
             </div>
             {trailerUrl && <YouTube videoId = {trailerUrl} opts= {opts} />}
 

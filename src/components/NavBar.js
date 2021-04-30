@@ -20,7 +20,7 @@ function NavBar() {
         <span class="navbar-toggler-icon"></span>
       </button>
       <img
-        src="https://user-images.githubusercontent.com/55467685/112024996-bbaffb00-8b02-11eb-8b90-163b83464486.png"
+        src="https://user-images.githubusercontent.com/55467685/116442122-bfc4ec00-a817-11eb-9d01-5f48e218f730.png"
         alt="logo"
       />
       <div className="select-region">

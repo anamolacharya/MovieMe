@@ -61,6 +61,30 @@ h4 {
   filter: blur(6px);
   -webkit-filter: blur(5px);
 }
+.stream_text {
+  margin: 10px 10px 10px 10px;
+  height: 500px;
+  width: 70%;
+  text-align: center;
+  position: absolute;
+  top: 500px;
+  right: 10px;
+  color: rgb(241, 245, 244);
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+.IMDB_text {
+  margin: 10px 10px 10px 10px;
+  height: 500px;
+  width: 70%;
+  text-align: center;
+  position: absolute;
+  top: 600px;
+  right: 10px;
+  color: rgb(241, 245, 244);
+  letter-spacing: 2px;
+  font-size: 35px;
+}
 .about-us-header {
   display: flex;
   justify-content: center;
