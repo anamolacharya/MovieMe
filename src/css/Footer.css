@@ -62,28 +62,31 @@ h4 {
   -webkit-filter: blur(5px);
 }
 .stream_text {
-  margin: 10px 10px 10px 10px;
-  height: 500px;
-  width: 70%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  color: white;
+  right: 5px;
   position: absolute;
-  top: 500px;
-  right: 10px;
-  color: rgb(241, 245, 244);
-  letter-spacing: 2px;
-  font-size: 30px;
+  bottom: 400px;
 }
 .IMDB_text {
-  margin: 10px 10px 10px 10px;
-  height: 500px;
-  width: 70%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  color: white;
+  right: 5px;
   position: absolute;
-  top: 600px;
-  right: 10px;
-  color: rgb(241, 245, 244);
-  letter-spacing: 2px;
-  font-size: 35px;
+  bottom: 250px;
+}
+.favorite_text {
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  color: white;
+  right: 5px;
+  position: absolute;
+  bottom: 75px;
 }
 .about-us-header {
   display: flex;
@@ -92,4 +95,17 @@ h4 {
   color: white;
   position: absolute;
   top: 170px;
+}
+.overview_text {
+  display: absolute;
+  justify-content: center;
+  width: 55%;
+  color: white;
+  left: 20px;
+  position: absolute;
+  bottom: 10px;
+}
+.movie_image{
+  display: absolute;
+  justify-content: center;
 }

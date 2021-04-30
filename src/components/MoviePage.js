@@ -48,11 +48,12 @@ if (!loaded) {
             alt="bg-image"
           />
           <div>
-            <h1>{movie.title}</h1>
-        <h1 className="about-us-header">{movieID}</h1>
+        <h1 className="about-us-header"> {movie.title}</h1>
+        <h1 className="overview_text"> {movie.overview}</h1>
         <h1 className="stream_text">Streaming Link</h1>
         <h1 className="IMDB_text">IMDB Rating</h1>
-        <img src={image.backdrops[0] ? "https://image.tmdb.org/t/p/w500" + image.backdrops[0].file_path : ''} />
+        <h1 className="favorite_text">Favorite this: </h1>
+        <img className = "movie_image" src={image.backdrops[0] ? "https://image.tmdb.org/t/p/w500" + image.backdrops[0].file_path : ''} />
       </div>
           <div className="footer_position">
             <Footer />
