@@ -105,7 +105,18 @@ h4 {
   position: absolute;
   bottom: 10px;
 }
-.movie_image{
+.movie_image {
   display: absolute;
   justify-content: center;
+}
+.stream_provider {
+  position: absolute;
+  justify-content: center;
+  width: 55%;
+  left: 1200px;
+  top: 500px;
+  color: red;
+  font-size: 30px;
+}
+.IMDB_text {
 }
