@@ -31,23 +31,22 @@ function MoviePage() {
     "https://api.themoviedb.org/3/movie/" +
     movieID +
     "/watch/providers?api_key=6bc6187ce75ef23b68c83c1f02848597";
-    let fetchIMDB = "";
+  let fetchIMDB = "";
 
   //This useEffect helps to get the data from the API
   useEffect(() => {
     //if the bracket is blanck [], it will run once and do not run again
     async function fetchData() {
-      const request = await axios.get(fetchURL).then(response => {
+      const request = await axios.get(fetchURL).then((response) => {
         fetchIMDB =
-        "http://www.omdbapi.com/?i=" + response.data.imdb_id + "&apikey=513d661";
+          "http://www.omdbapi.com/?i=" +
+          response.data.imdb_id +
+          "&apikey=513d661";
         setMovie(response.data);
-      }
-
-      );
+      });
       const imageRequest = await axios.get(fetchImageURL);
       const streamProviderRequest = await axios.get(fetchWatchProvider);
       const IMDBRequest = await axios.get(fetchIMDB);
-
 
       setImage(imageRequest.data);
       setWatchProvider(streamProviderRequest.data);
@@ -73,7 +72,8 @@ function MoviePage() {
         Loading
       </h2>
     );
-  } else {console.log(movie.imdb_id);
+  } else {
+    console.log(movie.imdb_id);
     return (
       <div>
         <img
@@ -97,7 +97,9 @@ function MoviePage() {
           {/* <h1 className="IMDB_text">IMDB Ratingss: {imdb.imdbRating}</h1> */}
           <h1 className="IMDB_text">
             IMDB Ratings:
-            <a href={"https://imdb.com/title/"+movie.imdb_id}>{imdb.imdbRating}</a>
+            <a href={"https://imdb.com/title/" + movie.imdb_id}>
+              {imdb.imdbRating}
+            </a>
           </h1>
 
           <h1 className="favorite_text">Favorite this: </h1>
