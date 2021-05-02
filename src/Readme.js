@@ -21,4 +21,18 @@ Git Push from one branch to another branch
 $ git push origin master:Anamol
 Source: https://devconnected.com/how-to-push-git-branch-to-remote/#:~:text=In%20order%20to%20push%20a,branch%20name%20to%20be%20pushed.&text=If%20you%20are%20not%20already,to%20switch%20to%20your%20branch.
 
+
+        IMDB API(Alternative)
+	"x-rapidapi-key": "343f6c9f5dmsh4866102b7bb0306p113e69jsn7eefe752434e",
+		"x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com"
+
+
+    Passing an API Key via Query Parameter
+RapidAPI supports passing the API Key via query parameter. You can do this by including the following syntax in the link:
+
+Text
+
+https://example.p.rapidapi.com/?rapidapi-key=***************************
+
+
 */

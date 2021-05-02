@@ -106,10 +106,11 @@ h4 {
   position: absolute;
   bottom: 10px;
 }
-.movie_image{
+.movie_image {
   display: absolute;
   justify-content: center;
 }
+<<<<<<< HEAD
 =======
 .main-footer {
     background-color: rgb(25, 25, 25);
@@ -161,3 +162,16 @@ h4 {
     
 }
 >>>>>>> Updated files
+=======
+.stream_provider {
+  position: absolute;
+  justify-content: center;
+  width: 55%;
+  left: 1200px;
+  top: 500px;
+  color: red;
+  font-size: 30px;
+}
+.IMDB_text {
+}
+>>>>>>> 38dc0b8a3bb4954fd4ecdc7deea3649aa5728ed9

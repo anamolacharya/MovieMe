@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../css/Nav.css";
+import SearchPage from "./SearchPage";
 import SelectRegion from "./SelectRegion";
 
 function NavBar() {
@@ -75,8 +76,8 @@ function NavBar() {
             </Link>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
+        {/* <form class="form-inline my-2 my-lg-0"> */}
+        {/* <input
             class="form-control mr-sm-2"
             type="search"
             placeholder="Search"
@@ -84,8 +85,9 @@ function NavBar() {
           />
           <button class=" btn btn-outline-success my-2 my-sm-0 " type="submit">
             Search
-          </button>
-        </form>
+          </button> */}
+        <SearchPage />
+        {/* </form> */}
       </div>
     </nav>
   );
