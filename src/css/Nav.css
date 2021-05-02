@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .nav {
   position: fixed;
   top: 0;
@@ -54,59 +53,3 @@
   position: absolute;
   left: 340px;
 }
-=======
-.nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 20px;
-  height: 30px;
-  z-index: 1; /* z index will always make in top */
-  /* display: flex;
-  justify-content: space-between; */
-  /* To create the animation */
-  transition-timing-function: ease-in;
-  transition: all 0.5;
-}
-.navbar-dark{
-  background:black;
-}
-
-.nav_black {
-  background-color: #111;
-}
-.btn-outline-success {
-  
-}
-.form-control{
-  width:400px  !important;
-  position:center !important;
-}
-.nav_logo {
-  width: 120px;
-  position: fixed;
-  left: 20px;
-  /* When a large picture in decreased the size, the width got only decreased
-    but not the breadth. So, to make the  image look appropriate with respect to 
-    width, object-fit should be followed */
-  object-fit: contain;
-}
-
-.nav_avatar {
-  position: fixed;
-  right: 20px;
-  width: 30px;
-  object-fit: contain;
-}
-
-.nav-link{
-  position:relative;
-  left:900px;
- 
-}
-.form-inline{
-  position:absolute;
-  left:500px;
-  
-}
->>>>>>> Updated files

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* This gives a nice margin on the left */
 .rowsss {
   color: white;
@@ -9,7 +8,6 @@
   overflow-y: hidden; /*This will hide the y axis scrolling */
   overflow-x: scroll; /* This will enable to scroll the x axis on the window when we hit shift and scroll through the mouse. */
   padding: 20px; /*This will not crop the image when we hover through the mouse */
-
 }
 
 /* This will tells all the browser not to show the scrollbar but performs the functions */
@@ -39,50 +37,7 @@
 .row_posterLarge:hover {
   transform: scale(1.2);
 }
-.form-control, .mr-sm-2{
-  width:100px;
-=======
-/* This gives a nice margin on the left */
-.rowsss {
-  color: white;
-  margin-left: 10px;
-}
-.row_posters {
-  display: flex; /* This will make the list of image from vertical to horizontal*/
-  overflow-y: hidden; /*This will hide the y axis scrolling */
-  overflow-x: scroll; /* This will enable to scroll the x axis on the window when we hit shift and scroll through the mouse. */
-  padding: 20px; /*This will not crop the image when we hover through the mouse */
-
-}
-
-/* This will tells all the browser not to show the scrollbar but performs the functions */
-.row_posters::-webkit-scrollbar {
-  display: none;
-}
-
-.row_poster {
-  object-fit: contain;
-  width: 100%;
-  max-height: 140px; /*This will make the image smaller */
-  margin-right: 5px; /*This will give the margin between the right side of the images*/
-  margin-left: 5px;
-  transition: transform 450ms; /*This will give a transition time to display the movie images*/
-}
-
-/* This will add the hover effect on the images when the cursuer moves over the image */
-.row_poster:hover {
-  transform: scale(1.1);
-}
-
-/* This is to make the for Netflix original larger */
-.row_posterLarge {
-  max-height: 250px;
-}
-/* This is to make the hover for Netflix original larger. */
-.row_posterLarge:hover {
-  transform: scale(1.2);
-}
-.form-control, .mr-sm-2{
-  width:100px;
->>>>>>> Updated files
+.form-control,
+.mr-sm-2 {
+  width: 100px;
 }
