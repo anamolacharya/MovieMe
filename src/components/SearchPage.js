@@ -8,44 +8,44 @@ import {
   Link,
   Route,
   useParams,
+  useHistory,
 } from "react-router-dom";
 import { checkPropTypes } from "prop-types";
 
 function SearchPage() {
-  //const movieID = useParams().movieID;
-
-  const [searchMovie, setSeachMovie] = useState([]);
+  const history = useHistory();
+  let searchMovieRequest = "";
+  let searchMovie = "";
 
   const [searchString, setSearchString] = useState("");
-  const fetchMovieID =
-    "https://api.themoviedb.org/3/search/multi?api_key=6bc6187ce75ef23b68c83c1f02848597&language=en-US&page=1&include_adult=false&query=avengers";
+
   async function fetchData() {
-    const searchMovieRequest = await axios.get(fetchMovieID);
-    setSeachMovie(searchMovieRequest.data);
+    const fetchMovieID =
+      "https://api.themoviedb.org/3/search/multi?api_key=6bc6187ce75ef23b68c83c1f02848597&language=en-US&page=1&include_adult=false&query=" +
+      searchString;
+    searchMovieRequest = await axios.get(fetchMovieID);
+    console.log("SerachMovieRequest; ", searchMovieRequest);
+    searchMovie = await searchMovieRequest.data.results[0];
+    history.push(`/moviepage/${searchMovie.id}`);
   }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    fetchData();
+  };
 
   return (
     <div className="box">
-      <form class="form-inline my-2 my-lg-0">
+      <form class="form-inline my-2 my-lg-0" onSubmit={handleSubmit}>
         <input
           class="form-control mr-sm-2"
-          type="search"
           placeholder="Search"
           aria-label="Search"
-          name="movieName"
           onChange={(e) => {
-            console.log(e.target.value);
             setSearchString(e.target.value);
           }}
         />
-        <button
-          onClick={(event) => {
-            fetchData();
-            window.location.href = "/moviepage/" + searchMovie.results[0].id;
-          }}
-          class=" btn btn-outline-success my-2 my-sm-0 "
-          type="submit"
-        >
+        <button class=" btn btn-outline-success my-2 my-sm-0 " type="submit">
           Search
         </button>
       </form>
