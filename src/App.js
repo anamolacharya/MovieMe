@@ -10,6 +10,7 @@ import AboutUs from "./pages/AboutUsPage";
 import MoviePage from "./pages/MoviePagePage";
 import SignUpPage from "./pages/SignUpPage";
 import SelectRegion from "./components/SelectRegion";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
           <Route path="/api/signin" component={SignInPage} exact />
           <Route path="/aboutus" component={AboutUs} exact />
           <Route path="/moviepage/:movieID" component={MoviePage} exact />
+          <Route path="/moviepage/:movieID/favorite" component={MoviePage} exact/>
           <Route path="/api/signup" component={SignUpPage} exact />
+          <Route path="/profile" component={Profile} exact />
         </Switch>
       </div>
     </Router>

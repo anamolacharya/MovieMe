@@ -60,6 +60,37 @@ function MoviePage() {
     fetchData();
   }, [fetchURL]);
 
+  const handleFavorite = (e) => {
+    e.preventDefault();
+
+    let data = JSON.stringify({
+      movieID: movieID
+    });
+
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: data,
+    };
+
+      fetch("http://localhost:8000/moviepage/"+movieID+"/favorite", requestOptions)
+      .then(async (response) => {
+        const responseData = await response.json();
+        console.log(responseData);
+
+        if (!response.ok) {
+          const error = (data && data.message) || response.status;
+          return Promise.reject(error);
+        } else {
+        }
+      })
+      .catch((error) => {
+        console.error("There was an error!", error);
+      });
+  
+      
+  }
+
   if (!loaded) {
     return (
       <h2
@@ -100,7 +131,7 @@ function MoviePage() {
             <a href={"https://imdb.com/title/"+movie.imdb_id}>{imdb.imdbRating}</a>
           </h1>
 
-          <h1 className="favorite_text">Favorite this: </h1>
+          <h1 className="favorite_text">Favorite this: <button onClick={handleFavorite}>Favorite</button></h1>
           <img
             className="movie_image"
             src={

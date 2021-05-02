@@ -99,6 +99,7 @@ export default function SignUp() {
           return Promise.reject(error);
         } else {
           setSignupStatus(true);
+          localStorage.setItem("firstName", firstName)
         }
       })
       .catch((error) => {

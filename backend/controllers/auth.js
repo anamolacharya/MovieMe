@@ -6,6 +6,7 @@ const {
 } = require("../utils/auth");
 const emailRegexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 exports.signup = (req, res, next) => {
+  console.log(2);
   let { name, email, password, password_confirmation } = req.body;
   let errors = [];
   if (!name) {
@@ -118,4 +119,18 @@ decoded) => {
    }).catch(err => {
       res.status(500).json({ errors: err });
    });
+}
+
+exports.favorite = (req, res, next) => {
+  console.log(1);
+  let movieID = req.params.movieID;
+  let email = localStorage.getItem("user");
+
+  User.findOne({ email: email }).then(user => {
+    user.favorites.push(movieID);
+})
+}
+
+exports.unfavorite = (req, res) => {
+
 }

@@ -34,10 +34,14 @@ function NavBar() {
               Home
             </Link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item">{
+            localStorage.getItem("signedIn") === "false" ?
             <Link className="nav-link" to="/api/signin">
               Sign In
+            </Link> : <Link className="nav-link" to="/profile">
+              Hello, {localStorage.getItem("firstName")}!
             </Link>
+}
           </li>
           <li class="nav-item">
             <Link className="nav-link" to="/api/signup">
