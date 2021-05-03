@@ -89,9 +89,9 @@ function MoviePage() {
           src="https://user-images.githubusercontent.com/55467685/115977981-35903580-a542-11eb-8cb7-06ddc3b5335e.png"
           alt="bg-image"
         />
-        <div>
+        <div className="movie_detail">
           <h1 className="about-us-header"> {movie.title}</h1>
-          <h1 className="overview_text"> {movie.overview}</h1>
+          <h1 className="overview_text">Movie Description: {movie.overview}</h1>
           <h1 className="stream_text">Streaming Options in USA:</h1>
           <p className="stream_provider">
             {watchProvider.results.US.rent
@@ -109,7 +109,7 @@ function MoviePage() {
               {imdb.imdbRating}
             </a>
           </h1>
-          <h1 className="Trailer">
+          <h1 className="trailer">
             <a href={"https://youtube.com/watch?v=" + trailer.results[0].key}>
               Movie Trailer
             </a>

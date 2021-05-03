@@ -77,7 +77,7 @@ h4 {
   color: white;
   right: 5px;
   position: absolute;
-  bottom: 250px;
+  bottom: 230px;
 }
 .favorite_text {
   display: flex;
@@ -86,7 +86,7 @@ h4 {
   color: white;
   right: 5px;
   position: absolute;
-  bottom: 75px;
+  bottom: 65px;
 }
 .about-us-header {
   display: flex;
@@ -102,21 +102,31 @@ h4 {
   width: 55%;
   color: white;
   left: 20px;
-  position: absolute;
-  bottom: 10px;
+  position: relative;
+  bottom: 300px;
 }
 .movie_image {
   display: absolute;
   justify-content: center;
+  position: absolute;
+  bottom: 150px;
 }
 .stream_provider {
   position: absolute;
   justify-content: center;
   width: 55%;
-  left: 1200px;
-  top: 500px;
+  left: 800px;
+  top: 330px;
   color: red;
   font-size: 30px;
 }
-.IMDB_text {
+
+.trailer {
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  color: white;
+  right: 5px;
+  position: absolute;
+  bottom: 110px;
 }
