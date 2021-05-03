@@ -18,6 +18,7 @@ function MoviePage() {
   const [image, setImage] = useState([]);
   const [watchProvider, setWatchProvider] = useState([]);
   const [imdb, setImdb] = useState([]);
+  const [trailer, setTrailer] = useState([]);
   const [loaded, setLoaded] = useState(false);
   const fetchURL =
     "https://api.themoviedb.org/3/movie/" +
@@ -33,6 +34,11 @@ function MoviePage() {
     "/watch/providers?api_key=6bc6187ce75ef23b68c83c1f02848597";
   let fetchIMDB = "";
 
+  const fetchTrailer =
+    "https://api.themoviedb.org/3/movie/" +
+    movieID +
+    "/videos?api_key=6bc6187ce75ef23b68c83c1f02848597&language=en-US";
+
   //This useEffect helps to get the data from the API
   useEffect(() => {
     //if the bracket is blanck [], it will run once and do not run again
@@ -47,10 +53,12 @@ function MoviePage() {
       const imageRequest = await axios.get(fetchImageURL);
       const streamProviderRequest = await axios.get(fetchWatchProvider);
       const IMDBRequest = await axios.get(fetchIMDB);
+      const trailerRequest = await axios.get(fetchTrailer);
 
       setImage(imageRequest.data);
       setWatchProvider(streamProviderRequest.data);
       setImdb(IMDBRequest.data);
+      setTrailer(trailerRequest.data);
 
       setLoaded(true);
 
@@ -99,6 +107,11 @@ function MoviePage() {
             IMDB Ratings:
             <a href={"https://imdb.com/title/" + movie.imdb_id}>
               {imdb.imdbRating}
+            </a>
+          </h1>
+          <h1 className="Trailer">
+            <a href={"https://youtube.com/watch?v=" + trailer.results[0].key}>
+              Movie Trailer
             </a>
           </h1>
 
