@@ -96,10 +96,10 @@ function MoviePage() {
           <p className="stream_provider">
             {watchProvider.results.US.rent
               ? watchProvider.results.US.rent.map((x) => {
-                  return x.provider_name;
+                  return x.provider_name + ", ";
                 })
               : watchProvider.results.US.flatrate.map((y) => {
-                  return y.provider_name;
+                  return y.provider_name + ", ";
                 })}
           </p>
           {/* <h1 className="IMDB_text">IMDB Ratingss: {imdb.imdbRating}</h1> */}
@@ -109,11 +109,16 @@ function MoviePage() {
               {imdb.imdbRating}
             </a>
           </h1>
+
           <h1 className="trailer">
             <a href={"https://youtube.com/watch?v=" + trailer.results[0].key}>
               Movie Trailer
             </a>
           </h1>
+          {/* <h1 className="trailer">
+            {trailer.results} ?{" "}
+            <a href={"https://youtube.com/watch?v=" + trailer.results[0].key}  />
+          </h1> */}
 
           <h1 className="favorite_text">Favorite this: </h1>
           <img
