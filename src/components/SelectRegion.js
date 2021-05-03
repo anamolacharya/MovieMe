@@ -7,31 +7,31 @@ import "../css/Nav.css";
 const currencies = [
   {
     value: "US",
-    label: "US",
+    label: "USA",
   },
   {
-    value: "CA",
-    label: "CA",
+    value: "BR",
+    label: "Brazil",
+  },
+  {
+    value: "AU",
+    label: "Australia",
   },
   {
     value: "UK",
-    label: "UK",
+    label: "United Kingdom",
   },
   {
-    value: "Europe",
-    label: "Europe",
+    value: "ZA",
+    label: "South Africa",
   },
   {
-    value: "Africa",
-    label: "Africa",
-  },
-  {
-    value: "Asia",
-    label: "Asia",
+    value: "IN",
+    label: "India",
   },
 ];
 
-const defaultChoice = { value: "  ", label: "Choose Region" };
+const defaultChoice = { value: "Default", label: "Choose Country" };
 
 const useStyles = makeStyles((theme) => ({
   root: {
