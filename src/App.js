@@ -1,33 +1,34 @@
+import React from "react";
+import "./App.css";
 
-//installed firebase 
-//install axios to proper use the API call
-// install react-youtube
-// install movie-trailer
-
-import React from 'react';
-import './App.css';
-import Row from './Row';
-import requests from './requests';
-import Banner from './Banner';
-import Nav from './Nav';
+import NavBar from "./components/NavBar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import SignInPage from "./pages/SignInPage";
+import Home from "./pages/HomePage";
+import AboutUs from "./pages/AboutUsPage";
+import MoviePage from "./pages/MoviePagePage";
+import SignUpPage from "./pages/SignUpPage";
+import SelectRegion from "./components/SelectRegion";
+import Profile from "./components/Profile";
 
 function App() {
   return (
-    <div className="app">
+    <Router>
+      <div className="app">
+        <NavBar />
 
-     <Nav/>
-     <Banner/>
-
-      <Row title= "Netflix Original" fetchUrl= {requests.fetchNetfllixOriginals}
-      isLargeRow />
-      <Row title= "Trending Now" fetchUrl = {requests.fetchTrending}/>
-      <Row title= "Top Rated" fetchUrl = {requests.fetchTopRated}/>
-      <Row title= "Action Movies" fetchUrl = {requests.fetchActionMovies}/>
-      <Row title= "Horror Movies" fetchUrl = {requests.fetchHorrorMovies}/>
-      <Row title= "Romantic Movies" fetchUrl = {requests.fetchRomanceMovies}/>
-      <Row title= "Documentaries" fetchUrl = {requests.fetchDocumentaries}/>
-      <Row title= "Comedy Movies" fetchUrl = {requests.fetchComedyMovies}/>
-    </div>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/api/signin" component={SignInPage} exact />
+          <Route path="/aboutus" component={AboutUs} exact />
+          <Route path="/moviepage/:movieID" component={MoviePage} exact />
+          <Route path="/moviepage/:movieID/favorite" component={MoviePage} exact/>
+          <Route path="/api/signup" component={SignUpPage} exact />
+          <Route path="/profile" component={Profile} exact />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
