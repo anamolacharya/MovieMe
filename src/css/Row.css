@@ -8,7 +8,6 @@
   overflow-y: hidden; /*This will hide the y axis scrolling */
   overflow-x: scroll; /* This will enable to scroll the x axis on the window when we hit shift and scroll through the mouse. */
   padding: 20px; /*This will not crop the image when we hover through the mouse */
-
 }
 
 /* This will tells all the browser not to show the scrollbar but performs the functions */
@@ -38,6 +37,7 @@
 .row_posterLarge:hover {
   transform: scale(1.2);
 }
-.form-control, .mr-sm-2{
-  width:100px;
+.form-control,
+.mr-sm-2 {
+  width: 100px;
 }
