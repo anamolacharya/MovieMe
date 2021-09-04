@@ -134,8 +134,8 @@ function MoviePage(props) {
             <h2>
               <li>
                 Rent:{"  "}
-                {watchProvider.results.IN.rent
-                  ? watchProvider.results.IN.rent.map((x) => {
+                {watchProvider.results.US.rent
+                  ? watchProvider.results.US.rent.map((x) => {
                       return x.provider_name + ", ";
                     })
                   : "No Rent options available"}
@@ -144,8 +144,8 @@ function MoviePage(props) {
               <li>
                 {" "}
                 Flatrate:{"  "}
-                {watchProvider.results.IN.flatrate
-                  ? watchProvider.results.IN.flatrate.map((y) => {
+                {watchProvider.results.US.flatrate
+                  ? watchProvider.results.US.flatrate.map((y) => {
                       return y.provider_name + ", ";
                     })
                   : "No Flatrate Options Available"}
@@ -154,8 +154,8 @@ function MoviePage(props) {
               <li>
                 {" "}
                 Buy:{"     "}
-                {watchProvider.results.IN.buy
-                  ? watchProvider.results.IN.buy.map((z) => {
+                {watchProvider.results.US.buy
+                  ? watchProvider.results.US.buy.map((z) => {
                       return z.provider_name + ", ";
                     })
                   : "N/A"}
